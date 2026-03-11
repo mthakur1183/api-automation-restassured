@@ -28,7 +28,6 @@ public abstract class BaseService {
                 .then()
                 .log().all()
                 .extract().response();
-
     }
 
     protected Response postRequest(Object payload , String endpoint)
