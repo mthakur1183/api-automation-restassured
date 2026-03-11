@@ -1,28 +1,21 @@
-# API Automation Framework - Rest Assured + TestNG
+# API Automation Framework – Rest Assured + TestNG
 
-This project is a service-based API automation framework built using **Java**, **Rest Assured**, **TestNG**, and **Maven**.  
-It demonstrates a scalable and maintainable design for testing REST APIs using layered architecture, reusable services, POJO-based request/response models, schema validation, logging, and grouped execution through TestNG.
+This project demonstrates a scalable API automation framework built using **Java, Rest Assured, TestNG, and Maven**.
+
+The framework follows a **service-based layered architecture** with reusable request configuration, POJO-based payload modeling, schema validation, logging, and grouped execution through TestNG.
 
 ## Key Highlights
 
-- Built using layered framework design
-- Supports reusable service abstraction
-- Implements POJO-based serialization/deserialization
-- Includes schema validation and negative testing
-- Uses TestNG grouping and suite execution
-
-## Features
-
-- Service-based framework design
-- Reusable `BaseService` with common request configuration
-- `UserService` for domain-specific API operations
-- Request and response POJOs for serialization/deserialization
-- Reusable response validation utilities
-- Test data builder for request payload creation
-- JSON schema validation for API contract checks
-- Request and response logging
-- Positive and negative test coverage
-- Test grouping and suite execution using `testng.xml`
+- Service-based API automation framework
+- Reusable BaseService with common RequestSpecification
+- UserService for domain-specific API operations
+- POJO request/response models for serialization/deserialization
+- JSON schema validation for API contract verification
+- Test data builder for reusable payload generation
+- Response validators to avoid duplicate assertions
+- Logging for request and response debugging
+- Positive and negative API test coverage
+- TestNG suite execution using `testng.xml`
 
 ## Tech Stack
 
