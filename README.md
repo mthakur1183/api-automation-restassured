@@ -3,6 +3,14 @@
 This project is a service-based API automation framework built using **Java**, **Rest Assured**, **TestNG**, and **Maven**.  
 It demonstrates a scalable and maintainable design for testing REST APIs using layered architecture, reusable services, POJO-based request/response models, schema validation, logging, and grouped execution through TestNG.
 
+## Key Highlights
+
+- Built using layered framework design
+- Supports reusable service abstraction
+- Implements POJO-based serialization/deserialization
+- Includes schema validation and negative testing
+- Uses TestNG grouping and suite execution
+
 ## Features
 
 - Service-based framework design

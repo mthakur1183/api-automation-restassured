@@ -7,7 +7,7 @@ import io.restassured.specification.RequestSpecification;
 
 import static io.restassured.RestAssured.*;
 
-public class BaseService {
+public abstract class BaseService {
 
     private RequestSpecification requestSpecification;
     private static final String BaseUrl =  ConfigManager.get("baseUrl");
@@ -19,7 +19,8 @@ public class BaseService {
 
     protected Response getRequest(String endpoint)
     {
-        return requestSpecification
+        return given()
+                .spec(requestSpecification)
                 .header("x-api-key",ConfigManager.get("apiKey"))
                 .log().all()
                 .when()
@@ -32,7 +33,8 @@ public class BaseService {
 
     protected Response postRequest(Object payload , String endpoint)
     {
-        return requestSpecification
+        return given()
+                .spec(requestSpecification)
                 .contentType("application/json")
                 .header("x-api-key",ConfigManager.get("apiKey"))
                 .body(payload)
