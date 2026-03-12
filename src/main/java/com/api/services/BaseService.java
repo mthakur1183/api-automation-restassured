@@ -1,7 +1,6 @@
 package com.api.services;
 
 import com.api.config.ConfigManager;
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
